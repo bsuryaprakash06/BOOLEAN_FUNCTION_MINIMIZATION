@@ -1,5 +1,7 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
 
+**DATE: 4/10/2024**
+
 **AIM:**
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
@@ -16,7 +18,17 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
-**Logic Diagram**
+Boolean Algebra is a branch of algebra that deals with boolean values—true and false. It is fundamental to digital logic design and computer science, providing a mathematical framework for describing logical operations and expressions
+
+**Truth Table**
+
+**F1**
+
+![image](https://github.com/user-attachments/assets/c1a358dd-9b50-403d-8126-7fac8ea60ac2)
+
+**F2**
+
+![image](https://github.com/user-attachments/assets/fabd3db2-a2df-4ab6-b000-23799cdedefa)
 
 **Procedure**
 
@@ -33,18 +45,47 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: SURYA PRAKASH B
+
+RegisterNumber: 212224230281
+```
+i)F1
+module funct1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
+
+ii)F2
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));0
+endmodule
+```
 
 
-**RTL realization**
+**RTL DIAGRAM**
 
-**Output:**
+**F1**
 
-**RTL**
+![image](https://github.com/user-attachments/assets/a62a2ed4-e5dd-4eb1-9284-dd63c6047cf4)
+
+**F2**
+
+![image](https://github.com/user-attachments/assets/9ea258b7-0118-4230-beb1-386ad14ad80f)
 
 **Timing Diagram**
+
+**F1**
+
+![image](https://github.com/user-attachments/assets/a1f33d10-e65d-4475-82c2-ca7afe419af2)
+
+**F2**
+
+![image](https://github.com/user-attachments/assets/122e0e89-19fb-47f5-a965-d4811318a682)
 
 **Result:**
 
